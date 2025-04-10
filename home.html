@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Tailwind and DaysiUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="text-center font-bold text-3xl pt-4">Welcome To Home</h1>
+    <div class="divider"></div>
+    <!-- Main Area -->
+    <main>
+        <!-- Main Balance -->
+        <div class="flex justify-center">
+            <div class="stats shadow">
+                <div class="stat">
+                    <div class="stat-title">Total Page Views</div>
+                    <div class="stat-value">89,400</div>
+                </div>
+            </div>
+        </div>
+        <!-- Cash in And Cash Out Button -->
+        <div class="flex justify-center mt-4">
+            <div>
+                <div id="cashInBtn" class="btn text-center"> Cash in </div>
+                <div id="cashOutBtn" class="btn text-center"> Cash Out </div>
+            </div>
+        </div>
+        <!-- Cash In fieldset -->
+        <div id="cashinForm" class=" flex justify-center ">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-5">
+                <h2 class="font-bold text-xl text-center pt-2">Enter Cash In info</h2>
+                <form action="">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label">Phone Number</label>
+                            <input id="phoneNumber" type="text" class="input" placeholder="Enter Your Phone Number"
+                                required />
+                            <label class="fieldset-label">Amount</label>
+                            <input id="amount" type="text" class="input" placeholder="Enter Your Amount" required />
+                            <label class="fieldset-label">Pin Number</label>
+                            <input id="pinNumber" type="password" class="input" placeholder="Enter Your Pin" required />
+                            <button id="cInBtn" class="btn btn-neutral mt-4">Cash In</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Cash Out fieldset -->
+        <div id="cashOutFrom" class=" flex justify-center hidden ">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-5">
+                <h2 class="font-bold text-xl text-center pt-2">Enter Cash Out info</h2>
+                <form action="">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label">Phone Number</label>
+                            <input id="phoneNumber" type="text" class="input" placeholder="Enter Your Phone Number"
+                                required />
+                            <label class="fieldset-label">Amount</label>
+                            <input id="amount" type="text" class="input" placeholder="Enter Your Amount" required />
+                            <label class="fieldset-label">Pin Number</label>
+                            <input id="pinNumber" type="password" class="input" placeholder="Enter Your Pin" required />
+                            <button id="loginBtn" class="btn btn-neutral mt-4">Cash Out</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Script Link -->
+    <script src="js/cashInOut.js"></script>
+    <script src="js/inOut.js"></script>
+</body>
+
+</html>
